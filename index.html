@@ -568,82 +568,90 @@
   </section>
 
   <!-- QUOTE -->
-  <section id="quote">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <h2>Free Build / Upgrade Quote</h2>
-          <p>Fill this out and I’ll reply with a parts list + estimate.</p>
-        </div>
+ <!-- QUOTE -->
+<section id="quote">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Free Build / Upgrade Quote</h2>
+        <p>Fill this out and I’ll reply with a parts list + estimate.</p>
       </div>
+    </div>
 
-      <div class="card">
-        <form action="mailto:blucas09@baker.edu" method="post" enctype="text/plain">
-          <div>
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" required />
-            </label>
-            <div class="hint">So I know what to call you.</div>
-          </div>
+    <div class="card">
+      <!-- 🔒 SECURE FORMSPREE FORM -->
+      <form action="https://formspree.io/f/abcdwxyz" method="POST">
 
-          <div>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-            <div class="hint">Where I’ll send the quote.</div>
-          </div>
+        <!-- Required hidden fields -->
+        <input type="hidden" name="_subject" value="New CyberPup PC Quote Request">
+        <input type="hidden" name="_redirect" value="https://blucas09.github.io/cyberpup-pc-solutions/">
+        <input type="text" name="_gotcha" style="display:none">
 
-          <div>
-            <label>
-              Service Type
-              <select name="service">
-                <option>New PC Build</option>
-                <option>Upgrade</option>
-                <option>Repair / Troubleshooting</option>
-                <option>Tune-Up / Cleanup</option>
-                <option>Not Sure</option>
-              </select>
-            </label>
-            <div class="hint">Pick the closest match.</div>
-          </div>
+        <div>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <div class="hint">So I know what to call you.</div>
+        </div>
 
-          <div>
-            <label>
-              Budget (optional)
-              <input type="text" name="budget" placeholder="$800–$1200 (example)" />
-            </label>
-            <div class="hint">Even a range helps.</div>
-          </div>
+        <div>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <div class="hint">Where I’ll send the quote.</div>
+        </div>
 
-          <div class="full">
-            <label>
-              Details
-              <textarea name="message" placeholder="What do you want the PC to do? Any games/apps? Current specs (if upgrade)? Any preferences (Intel/AMD, NVIDIA/AMD, RGB/no RGB)?" required></textarea>
-            </label>
-          </div>
+        <div>
+          <label>
+            Service Type
+            <select name="service">
+              <option>New PC Build</option>
+              <option>Upgrade</option>
+              <option>Repair / Troubleshooting</option>
+              <option>Tune-Up / Cleanup</option>
+              <option>Not Sure</option>
+            </select>
+          </label>
+          <div class="hint">Pick the closest match.</div>
+        </div>
 
-          <div class="full">
-            <div class="form-actions">
-              <button class="btn btn-primary" type="submit">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M22 2L11 13" stroke="rgba(0,0,0,.75)" stroke-width="1.8" stroke-linecap="round"/>
-                  <path d="M22 2l-7 20-4-9-9-4 20-7z" stroke="rgba(0,0,0,.75)" stroke-width="1.8" stroke-linejoin="round"/>
-                </svg>
-                Send Quote Request
-              </button>
+        <div>
+          <label>
+            Budget (optional)
+            <input type="text" name="budget" placeholder="$800–$1200 (example)" />
+          </label>
+          <div class="hint">Even a range helps.</div>
+        </div>
 
-              <div class="small-note">
-                Note: this uses your device’s email app (mailto). If it doesn’t open, you can email me directly below.
-              </div>
+        <div class="full">
+          <label>
+            Details
+            <textarea
+              name="message"
+              placeholder="What do you want the PC to do? Any games/apps? Current specs (if upgrading)? Preferences (Intel/AMD, NVIDIA/AMD, RGB/no RGB)?"
+              required></textarea>
+          </label>
+        </div>
+
+        <div class="full">
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">
+              Send Quote Request
+            </button>
+
+            <div class="small-note">
+              Secure HTTPS form • No spam • You’ll receive a reply by email
             </div>
           </div>
-        </form>
-      </div>
+        </div>
 
+      </form>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- CONTACT -->
   <section id="contact">
